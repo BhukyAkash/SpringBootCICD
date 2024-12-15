@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - java -version
+      - echo Building the Spring Boot application...
+      - mvn clean package
+
+  post_build:
+    commands:
+      - echo Build completed successfully.
+      - echo Listing target directory contents...
+      - ls -al target
+
+  artifacts:
+    files:
+      - target/cicd-aws.jar
+    discard-paths: yes
+
