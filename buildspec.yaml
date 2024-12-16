@@ -17,4 +17,4 @@ phases:
       - echo Build completed
 artifacts:
   files:
-    - target/cicd-aws.jar
+    - target/*.jar
