@@ -8,6 +8,8 @@ phases:
     commands:
       - echo Pre-build started
       - mvn clean
+      - rm -rf ~/.m2/repository
+
   build:
     commands:
       - echo Building the project...
